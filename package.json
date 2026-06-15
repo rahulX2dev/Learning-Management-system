@@ -1,0 +1,46 @@
+{
+  "name": "learning-management-system",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "seed": "ts-node --project tsconfig.scripts.json src/scripts/seed-courses.ts",
+    "seed:live": "ts-node --project tsconfig.scripts.json src/scripts/seed-live-courses.ts",
+    "seed:dsa": "ts-node --project tsconfig.scripts.json src/scripts/seed-dsa-problems.ts",
+    "seed:users": "ts-node --project tsconfig.scripts.json src/scripts/seed-users.ts",
+    "seed:dsa:custom": "ts-node --project tsconfig.scripts.json src/scripts/seed-dsa-custom.ts",
+    "seed:blogs:madnotary": "ts-node --project tsconfig.scripts.json src/scripts/seed-blogs-madnotary.ts"
+    ,"delete:dsa": "ts-node --project tsconfig.scripts.json src/scripts/delete-all-dsa.ts"
+  },
+  "dependencies": {
+    "@monaco-editor/react": "^4.7.0",
+    "axios": "^1.7.9",
+    "bcryptjs": "^2.4.3",
+    "framer-motion": "^11.14.4",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.4",
+    "next": "^15.0.3",
+    "razorpay": "^2.9.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.3.0",
+    "react-markdown": "^10.1.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/node": "^22.19.1",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9",
+    "eslint-config-next": "^15.0.3",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5"
+  }
+}
