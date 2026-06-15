@@ -1,0 +1,21 @@
+import { NextResponse } from 'next/server';
+
+export async function POST() {
+    try {
+        const response = NextResponse.json({
+            success: true,
+            message: 'Logout successful',
+        });
+
+        // Clear the token cookie
+        response.cookies.delete('token');
+
+        return response;
+    } catch (error: any) {
+        console.error('Logout error:', error);
+        return NextResponse.json(
+            { error: 'Server error during logout' },
+            { status: 500 }
+        );
+    }
+}
